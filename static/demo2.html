@@ -1,0 +1,15 @@
+﻿<html>
+<head>
+    <title>demo2,演示grunt和requirejs的使用</title>
+    <script type="text/javascript" src="../core/js/require.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+        require(['jquery','ko', 'domReady!'], function ($,ko,doc) {
+            ko.applyBindings('demo2', $('#title')[0]);
+        });
+    </script>
+</head>
+<body>
+    <h1 id="title" data-bind="text:$data">demo</h1>
+</body>
+</html>
